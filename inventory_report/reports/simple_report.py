@@ -2,6 +2,9 @@ import time
 
 
 class SimpleReport:
+    def __init__(self):
+        print("Simple Report criado")
+
     def generate(products):
         currentTime = time.strftime("%Y-%m-%d")
         manufacturingDate = currentTime
