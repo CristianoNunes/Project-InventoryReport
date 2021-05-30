@@ -1,4 +1,6 @@
 import time
+
+
 class SimpleReport:
     def generate(products):
         currentTime = time.strftime("%Y-%m-%d")
@@ -19,7 +21,7 @@ class SimpleReport:
                 companies[productName] = 1
             else:
                 companies[productName] += 1
-        
+
         largestStock = max(companies, key=companies.get)
 
         response = (f"Data de fabricação mais antiga: {manufacturingDate}\n"
@@ -28,4 +30,3 @@ class SimpleReport:
                     f"{largestStock}\n")
 
         return response
-            
